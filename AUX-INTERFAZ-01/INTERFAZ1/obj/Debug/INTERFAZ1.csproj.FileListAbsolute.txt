@@ -1,0 +1,7 @@
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\bin\Debug\INTERFAZ1.exe
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\bin\Debug\INTERFAZ1.pdb
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\obj\Debug\INTERFAZ1.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\obj\Debug\INTERFAZ1.MainForm.resources
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\obj\Debug\INTERFAZ1.csproj.GenerateResource.Cache
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\obj\Debug\INTERFAZ1.exe
+C:\Users\rodri\Desktop\clase02\INTERFAZ1\INTERFAZ1\obj\Debug\INTERFAZ1.pdb

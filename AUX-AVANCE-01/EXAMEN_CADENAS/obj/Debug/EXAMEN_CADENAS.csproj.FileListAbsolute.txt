@@ -1,0 +1,5 @@
+C:\Users\rodri\Desktop\clase02\EXAMEN_CADENAS\EXAMEN_CADENAS\bin\Debug\EXAMEN_CADENAS.exe
+C:\Users\rodri\Desktop\clase02\EXAMEN_CADENAS\EXAMEN_CADENAS\bin\Debug\EXAMEN_CADENAS.pdb
+C:\Users\rodri\Desktop\clase02\EXAMEN_CADENAS\EXAMEN_CADENAS\obj\Debug\EXAMEN_CADENAS.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\clase02\EXAMEN_CADENAS\EXAMEN_CADENAS\obj\Debug\EXAMEN_CADENAS.exe
+C:\Users\rodri\Desktop\clase02\EXAMEN_CADENAS\EXAMEN_CADENAS\obj\Debug\EXAMEN_CADENAS.pdb
