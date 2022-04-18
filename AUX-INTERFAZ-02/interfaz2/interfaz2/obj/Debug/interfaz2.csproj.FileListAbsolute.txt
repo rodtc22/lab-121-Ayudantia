@@ -1,0 +1,7 @@
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\obj\Debug\interfaz2.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\obj\Debug\interfaz2.MainForm.resources
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\obj\Debug\interfaz2.csproj.GenerateResource.Cache
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\bin\Debug\interfaz2.exe
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\bin\Debug\interfaz2.pdb
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\obj\Debug\interfaz2.exe
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-02\interfaz2\interfaz2\obj\Debug\interfaz2.pdb
