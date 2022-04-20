@@ -1,0 +1,14 @@
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\bin\Debug\Tienda.exe
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\bin\Debug\Tienda.pdb
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\obj\Debug\Tienda.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\obj\Debug\Tienda.csproj.GenerateResource.Cache
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\obj\Debug\Tienda.exe
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\rodri\Desktop\LAB-121--2022\New folder\Tienda\Tienda\obj\Debug\Tienda.VentanaInicio.resources
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\bin\Debug\Tienda.exe
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\bin\Debug\Tienda.pdb
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\obj\Debug\Tienda.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\obj\Debug\Tienda.VentanaInicio.resources
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\obj\Debug\Tienda.csproj.GenerateResource.Cache
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\obj\Debug\Tienda.exe
+C:\Users\rodri\Desktop\LAB-121--2022\AUX-INTERFAZ-03\Tienda\Tienda\obj\Debug\Tienda.pdb
