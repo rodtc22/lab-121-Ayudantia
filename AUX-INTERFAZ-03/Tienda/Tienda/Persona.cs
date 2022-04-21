@@ -35,7 +35,7 @@ namespace Tienda
 		{
 			return string.Format(" Nombre={0}, Paterno={1}, Materno={2}, Ci={3}, Fechanac={4}]", nombre, paterno, materno, ci, fechanac);
 		}
-		
+
 		
 		//getters y setters
 		public string Nombre {

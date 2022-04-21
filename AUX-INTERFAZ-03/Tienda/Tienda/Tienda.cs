@@ -16,8 +16,8 @@ namespace Tienda
 	public class Tienda
 	{
 		private Gerente ger;
-		private int nroEmp;
-		private Empleado [] emp = new Empleado[50];
+		private static int nroEmp;
+		private static Empleado [] emp = new Empleado[50];
 		private string direccionTienda; //tambien puede tener correo, pagina de face, y otros
 		private int contactoTienda;
 		
@@ -25,7 +25,8 @@ namespace Tienda
 		{
 			ger = new Gerente("Rodrigo","Ticona","Coronel",12345,"06/09/1999","Victor Gutierrez");
 			nroEmp = 1;
-			emp[nroEmp] = new Empleado("carlos","ape","mate",11111,"10/10/2000",2500,666666,"19/04/2022");
+			emp[1] = new Empleado("carlos","ape","mate",11111,"10/10/2000",2500,666666,"19/04/2022");
+			
 			direccionTienda = "Prado";
 			contactoTienda = 777777; 
 		}
@@ -45,11 +46,21 @@ namespace Tienda
 			                    ger, nroEmp, emp);
 			for(int i= 1 ;i <=nroEmp ;i++){
 				mostrar += emp[i];
+				mostrar += "\n\r";
 			}
 			
 			mostrar += string.Format("DireccionTienda={0}\n " +
 			                     "ContactoTienda={1}\n]",
 			                      direccionTienda, contactoTienda);
+			return mostrar;
+		}
+		
+		public string getEmpleados(){
+			String mostrar = "";
+			for(int i= 1 ;i <=nroEmp ;i++){
+				mostrar += emp[i];
+				mostrar += "\n\r";
+			}
 			return mostrar;
 		}
  	
