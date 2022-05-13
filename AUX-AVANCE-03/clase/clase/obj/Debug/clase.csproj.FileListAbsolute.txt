@@ -1,0 +1,5 @@
+C:\Users\rodri\Desktop\auxi\clase\clase\bin\Debug\clase.exe
+C:\Users\rodri\Desktop\auxi\clase\clase\bin\Debug\clase.pdb
+C:\Users\rodri\Desktop\auxi\clase\clase\obj\Debug\clase.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\auxi\clase\clase\obj\Debug\clase.exe
+C:\Users\rodri\Desktop\auxi\clase\clase\obj\Debug\clase.pdb
