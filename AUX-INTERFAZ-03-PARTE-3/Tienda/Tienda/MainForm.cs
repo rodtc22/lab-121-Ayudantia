@@ -24,7 +24,7 @@ namespace Tienda
 		{
 			InitializeComponent();
 			labelFecha.Text = "Fecha: " + DateTime.Now.ToString();
-			arch = new ArchivoTienda("supermarket.txt");
+			arch = new ArchivoTienda("maxitienda.txt");
 		}
 			
 		
@@ -57,7 +57,7 @@ namespace Tienda
 		
 		void ButtonAgregaEmpleadosClick(object sender, EventArgs e)
 		{
-			VentanaAgregar inic = new VentanaAgregar();
+			VentanaAgregar inic = new VentanaAgregar(arch);
 			inic.FormBorderStyle = FormBorderStyle.None;
 			inic.AutoScroll = true;
 			inic.TopLevel = false;
@@ -70,7 +70,7 @@ namespace Tienda
 		
 		void ButtonEmpleadosClick(object sender, EventArgs e)
 		{
-			VentanaEmpleados inic = new VentanaEmpleados();
+			VentanaEmpleados inic = new VentanaEmpleados(arch);
 			inic.FormBorderStyle = FormBorderStyle.None;
 			inic.AutoScroll = true;
 			inic.TopLevel = false;

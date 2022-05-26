@@ -9,7 +9,6 @@
 using System;
 using System.IO;
 
-
 namespace Tienda
 {
 	/// <summary>
@@ -58,7 +57,7 @@ namespace Tienda
 			get { return fechaContrato; }
 			set { fechaContrato = value; }
 		}
- 
+ 	
 		
 		public void escritura(BinaryWriter escritor){
 			base.escritura(escritor);
@@ -71,7 +70,7 @@ namespace Tienda
 			base.lectura(lector);
 			sueldo = lector.ReadDouble();
 			nrocelular = lector.ReadInt32();
-			fechaContrato = lector.ReadString();
+			fechaContrato  = lector.ReadString();
 		}
 	}
 }

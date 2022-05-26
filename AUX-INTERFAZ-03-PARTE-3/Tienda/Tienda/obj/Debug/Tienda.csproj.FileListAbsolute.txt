@@ -44,6 +44,17 @@ C:\Users\rodri\Desktop\New folder\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tien
 C:\Users\rodri\Desktop\New folder\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\bin\Debug\Tienda.pdb
 C:\Users\rodri\Desktop\New folder\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.pdb
 C:\Users\rodri\Desktop\New folder\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaEmpleados.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\bin\Debug\Tienda.exe
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\bin\Debug\Tienda.pdb
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.csprojResolveAssemblyReference.cache
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaInicio.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaAgregar.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaEmpleados.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaInformacion.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.VentanaInicial.resources
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.csproj.GenerateResource.Cache
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.exe
+C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-2\Tienda\Tienda\obj\Debug\Tienda.pdb
 C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-3\Tienda\Tienda\bin\Debug\Tienda.exe
 C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-3\Tienda\Tienda\bin\Debug\Tienda.pdb
 C:\Users\rodri\Desktop\lab-121-Ayudantia\AUX-INTERFAZ-03-PARTE-3\Tienda\Tienda\obj\Debug\Tienda.csprojResolveAssemblyReference.cache

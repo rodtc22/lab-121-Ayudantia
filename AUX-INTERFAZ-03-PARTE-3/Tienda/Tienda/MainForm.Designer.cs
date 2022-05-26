@@ -82,14 +82,14 @@ namespace Tienda
 			this.panelArriba.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(189)))), ((int)(((byte)(165)))));
 			this.panelArriba.Location = new System.Drawing.Point(0, 0);
 			this.panelArriba.Name = "panelArriba";
-			this.panelArriba.Size = new System.Drawing.Size(871, 73);
+			this.panelArriba.Size = new System.Drawing.Size(917, 73);
 			this.panelArriba.TabIndex = 0;
 			// 
 			// labelFecha
 			// 
 			this.labelFecha.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.labelFecha.Font = new System.Drawing.Font("Ink Free", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelFecha.Location = new System.Drawing.Point(634, 15);
+			this.labelFecha.Location = new System.Drawing.Point(680, 15);
 			this.labelFecha.Name = "labelFecha";
 			this.labelFecha.Size = new System.Drawing.Size(225, 44);
 			this.labelFecha.TabIndex = 1;
@@ -119,7 +119,7 @@ namespace Tienda
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel2.Location = new System.Drawing.Point(0, 73);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(200, 514);
+			this.panel2.Size = new System.Drawing.Size(200, 568);
 			this.panel2.TabIndex = 1;
 			// 
 			// panel16
@@ -370,7 +370,7 @@ namespace Tienda
 			this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelContenedor.Location = new System.Drawing.Point(200, 73);
 			this.panelContenedor.Name = "panelContenedor";
-			this.panelContenedor.Size = new System.Drawing.Size(671, 514);
+			this.panelContenedor.Size = new System.Drawing.Size(717, 568);
 			this.panelContenedor.TabIndex = 2;
 			// 
 			// VentanaInicio
@@ -378,7 +378,7 @@ namespace Tienda
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.ClientSize = new System.Drawing.Size(871, 587);
+			this.ClientSize = new System.Drawing.Size(917, 641);
 			this.Controls.Add(this.panelContenedor);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panelArriba);

@@ -225,6 +225,7 @@ namespace Tienda
 			this.label2.Size = new System.Drawing.Size(144, 22);
 			this.label2.TabIndex = 12;
 			this.label2.Text = "Paterno:";
+			this.label2.Click += new System.EventHandler(this.Label2Click);
 			// 
 			// textBoxNombre
 			// 

@@ -8,7 +8,6 @@
  */
 using System;
 using System.IO;
-
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -32,21 +31,17 @@ namespace Tienda
 			arch = a;
 		}
 		
-		void ButtonCrearTiendaClick(object sender, EventArgs e)
+		void ButtonNuevaTiendaClick(object sender, EventArgs e)
 		{
 			if(File.Exists(arch.Ruta)){
-				if(MessageBox.Show(
-					"Esta seguro de crear una nueva tienda, eliminando la tienda anterior?",
-					"Alerta",
-					MessageBoxButtons.OKCancel,
-					MessageBoxIcon.Exclamation) == DialogResult.OK
-				){
+				if(MessageBox.Show("En realidad quieres sobreescribir la tienda anterior?","Alerta",MessageBoxButtons.OKCancel,MessageBoxIcon.Exclamation) == DialogResult.OK){
 					arch.crear();
-					
+					arch.adiTienda(new Tienda());
 				}
 			}else{
-				MessageBox.Show("Creado con exito","Agregado",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				MessageBox.Show("Archivo creado con exito","Exito",MessageBoxButtons.OK,MessageBoxIcon.Information);
 				arch.crear();
+				arch.adiTienda(new Tienda());
 			}
 		}
 	}

@@ -17,33 +17,22 @@ namespace Tienda
 	/// </summary>
 	public partial class VentanaEmpleados : Form
 	{
-//		Tienda tienda;
-//		ArchivoTienda arch;
-		string ruta;
+		ArchivoTienda arch;
 		
 		public VentanaEmpleados()
 		{
 			InitializeComponent();
 		}
 		
-//		public VentanaEmpleados(Tienda t)
-//		{
-//			InitializeComponent();
-//			tienda = t;
-//			mostrarDatos();
-//		}
-		
-		public VentanaEmpleados(string t)
+		public VentanaEmpleados(ArchivoTienda t)
 		{
 			InitializeComponent();
-			ruta = t;
+			arch = t;
 			mostrarDatos();
 		}
 		
 		public void mostrarDatos(){
-			ArchivoTienda arch = new ArchivoTienda(ruta);
-			
-			Tienda tienda = arch.getTienda();
+			Tienda tienda = arch.dameTienda();
 			
 			labelNroEmpleados.Text = "Numero de empleados: " + tienda.NroEmp;
 			
@@ -78,13 +67,12 @@ namespace Tienda
 		
 		void ButtonGuardarClick(object sender, EventArgs e)
 		{
-			moverDeDataGridViewATienda();
+			Tienda tienda = arch.dameTienda();
+			moverDeDataGridViewATienda(tienda); // se actualiza la  tienda, lista para guardar en el archivo
+			arch.modificarTienda(tienda);
 		}
 		
-		void moverDeDataGridViewATienda(){
-			ArchivoTienda arch = new ArchivoTienda(ruta);
-			Tienda tienda = arch.getTienda();
-			
+		public void moverDeDataGridViewATienda(Tienda tienda){
 			
 			int n = tienda.NroEmp;
 			tienda.NroEmp = 0; //Eliminando a todos los empleados
@@ -102,19 +90,20 @@ namespace Tienda
 				emp.FechaContrato 	= dataGridViewEmpleados.Rows[i].Cells[7].Value.ToString();
 				
 				tienda.adiEmpleado(emp);
-			}
+			}	
 		}
 		
 		void ButtonEliminarClick(object sender, EventArgs e)
+			
 		{
-			ArchivoTienda arch = new ArchivoTienda(ruta);
-			Tienda tienda = arch.getTienda();
+			Tienda tienda = arch.dameTienda();
 			
 			if(tienda.NroEmp > 0){
 				dataGridViewEmpleados.Rows.Remove(dataGridViewEmpleados.CurrentRow);
 				tienda.NroEmp--;
 				labelNroEmpleados.Text = "Numero de empleados: "+tienda.NroEmp;
-				moverDeDataGridViewATienda();
+				moverDeDataGridViewATienda(tienda);
+				arch.modificarTienda(tienda);
 			}
 		}
 	}

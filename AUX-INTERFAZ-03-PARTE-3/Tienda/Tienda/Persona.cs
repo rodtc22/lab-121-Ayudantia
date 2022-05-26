@@ -9,7 +9,6 @@
 using System;
 using System.IO;
 
-
 namespace Tienda
 {
 	/// <summary>
@@ -17,9 +16,9 @@ namespace Tienda
 	/// </summary>
 	public class Persona
 	{
-		private string nombre,paterno,materno;
-		private int ci;
-		private string fechanac;
+		protected string nombre,paterno,materno;
+		protected int ci;
+		protected string fechanac;
 		
 		
 		
@@ -67,8 +66,6 @@ namespace Tienda
 			set { fechanac = value; }
 		}
 		
-		
-		//
 		public void escritura(BinaryWriter escritor){
 			escritor.Write(nombre);
 			escritor.Write(paterno);

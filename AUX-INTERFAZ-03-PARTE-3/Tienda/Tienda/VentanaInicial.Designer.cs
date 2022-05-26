@@ -39,7 +39,7 @@ namespace Tienda
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaInicial));
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.buttonCrearTienda = new System.Windows.Forms.Button();
+			this.buttonNuevaTienda = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -47,30 +47,33 @@ namespace Tienda
 			// 
 			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
 			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pictureBox1.Location = new System.Drawing.Point(164, 21);
+			this.pictureBox1.Location = new System.Drawing.Point(175, 35);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(296, 254);
+			this.pictureBox1.Size = new System.Drawing.Size(296, 251);
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Segoe Marker", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(143, 278);
+			this.label1.Location = new System.Drawing.Point(166, 289);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(334, 50);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Bievenidos a la Tienda";
 			// 
-			// buttonCrearTienda
+			// buttonNuevaTienda
 			// 
-			this.buttonCrearTienda.Location = new System.Drawing.Point(540, 30);
-			this.buttonCrearTienda.Name = "buttonCrearTienda";
-			this.buttonCrearTienda.Size = new System.Drawing.Size(75, 23);
-			this.buttonCrearTienda.TabIndex = 2;
-			this.buttonCrearTienda.Text = "Nuevo";
-			this.buttonCrearTienda.UseVisualStyleBackColor = true;
-			this.buttonCrearTienda.Click += new System.EventHandler(this.ButtonCrearTiendaClick);
+			this.buttonNuevaTienda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNuevaTienda.BackgroundImage")));
+			this.buttonNuevaTienda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.buttonNuevaTienda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.buttonNuevaTienda.ForeColor = System.Drawing.Color.SandyBrown;
+			this.buttonNuevaTienda.Location = new System.Drawing.Point(579, 12);
+			this.buttonNuevaTienda.Name = "buttonNuevaTienda";
+			this.buttonNuevaTienda.Size = new System.Drawing.Size(50, 50);
+			this.buttonNuevaTienda.TabIndex = 2;
+			this.buttonNuevaTienda.UseVisualStyleBackColor = true;
+			this.buttonNuevaTienda.Click += new System.EventHandler(this.ButtonNuevaTiendaClick);
 			// 
 			// VentanaInicial
 			// 
@@ -78,7 +81,7 @@ namespace Tienda
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SandyBrown;
 			this.ClientSize = new System.Drawing.Size(641, 374);
-			this.Controls.Add(this.buttonCrearTienda);
+			this.Controls.Add(this.buttonNuevaTienda);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -87,7 +90,7 @@ namespace Tienda
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 		}
-		private System.Windows.Forms.Button buttonCrearTienda;
+		private System.Windows.Forms.Button buttonNuevaTienda;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.PictureBox pictureBox1;
 	}

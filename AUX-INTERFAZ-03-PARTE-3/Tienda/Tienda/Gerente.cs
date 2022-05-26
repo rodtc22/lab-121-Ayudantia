@@ -9,7 +9,6 @@
 using System;
 using System.IO;
 
-
 namespace Tienda
 {
 	/// <summary>
@@ -41,9 +40,9 @@ namespace Tienda
 		public string Direccion {
 			get { return direccion; }
 			set { direccion = value; }
-		}
-
-public void escritura(BinaryWriter escritor){
+		}	
+		
+		public void escritura(BinaryWriter escritor){
 			base.escritura(escritor);
 			escritor.Write(direccion);
 		}
@@ -51,6 +50,6 @@ public void escritura(BinaryWriter escritor){
 		public void lectura(BinaryReader lector){
 			base.lectura(lector);
 			direccion = lector.ReadString();
-		}		
+		}
 	}
 }

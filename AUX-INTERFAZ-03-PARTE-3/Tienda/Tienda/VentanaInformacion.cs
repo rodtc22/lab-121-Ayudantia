@@ -24,25 +24,23 @@ namespace Tienda
 			InitializeComponent();
 		}
 		
-		public VentanaInformacion(ArchivoTienda a)
+		public VentanaInformacion(ArchivoTienda t)
 		{
 			InitializeComponent();
-			arch = a;
+			arch = t;
 			mostrarDatos();
 		}
 		
 		public void mostrarDatos(){
-			Tienda tienda = arch.getTienda();
 			
-			//esta parte cambia//
-			textBoxNombre.Text = tienda.Ger.Nombre;
-			textBoxPaterno.Text = tienda.Ger.Paterno;
-			textBoxMaterno.Text = tienda.Ger.Materno;
-			textBoxCarnet.Text = tienda.Ger.Ci.ToString();
+			Tienda tienda = arch.dameTienda();
+			
+			textBoxNombreGerente.Text = tienda.Ger.Nombre;
+			textBoxPaternoGerente.Text = tienda.Ger.Paterno;
+			textBoxMaternoGerente.Text = tienda.Ger.Materno;
+			textBoxCarnetGerente.Text = tienda.Ger.Ci.ToString();
 			textBoxDireccionGerente.Text = tienda.Ger.Direccion;
-			textBoxNacimiento.Text = tienda.Ger.Fechanac;
-					
-			//
+			textBoxNacimientoGerente.Text = tienda.Ger.Fechanac;
 			
 			labelNroEmpleados.Text = "Numero de empleados: "+tienda.NroEmp.ToString();
 			textBoxEmpleados.Text = tienda.getEmpleados();
@@ -50,24 +48,22 @@ namespace Tienda
 			textBoxContacto.Text = tienda.ContactoTienda.ToString();
 		}
 		
-		void TextBoxDireccionTextChanged(object sender, EventArgs e)
-		{
-			
-		}
-		
 		void ButtonokClick(object sender, EventArgs e)
 		{
-			Tienda tienda = arch.getTienda();
-			tienda.Ger.Nombre = textBoxNombre.Text;
-			tienda.Ger.Paterno = textBoxPaterno.Text ;
-			tienda.Ger.Materno = textBoxMaterno.Text ;
-			tienda.Ger.Ci = int.Parse(textBoxCarnet.Text);
+			Tienda tienda = arch.dameTienda();
+			
+			tienda.Ger.Nombre = textBoxNombreGerente.Text;
+			tienda.Ger.Paterno = textBoxPaternoGerente.Text;
+			tienda.Ger.Materno = textBoxMaternoGerente.Text;
+			tienda.Ger.Ci = int.Parse(textBoxCarnetGerente.Text);
 			tienda.Ger.Direccion = textBoxDireccionGerente.Text;
-			tienda.Ger.Fechanac = textBoxNacimiento.Text ;
+			tienda.Ger.Fechanac = textBoxNacimientoGerente.Text;
 			tienda.DireccionTienda = textBoxDireccion.Text;
 			tienda.ContactoTienda = int.Parse(textBoxContacto.Text);
 			
-			arch.modificar(tienda);
+			arch.modificarTienda(tienda);
+			MessageBox.Show("Modificacion exitosa");
+
 		}
 	}
 }

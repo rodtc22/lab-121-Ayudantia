@@ -63,11 +63,11 @@ namespace Tienda
 			for(int i= 1 ;i <=nroEmp ;i++){
 				mostrar += emp[i];
 				mostrar += "\n\r";
-				mostrar += "======================\n\r";
+				mostrar += "========================================\n\r";
+				mostrar += "\n\r";
 			}
 			return mostrar;
-		}
- 	
+		} 	
 		
 		public void adiEmpleado(Empleado e){
 			nroEmp++;
@@ -99,24 +99,25 @@ namespace Tienda
 			set { contactoTienda = value; }
 		}
 		
-		public void escritura(BinaryWriter escritor){
-			ger.escritura(escritor);
-			escritor.Write(nroEmp);
-			for(int i = 1 ;i <= nroEmp ;i++){
-				emp[i].escritura(escritor);
-			}
-			escritor.Write(direccionTienda);
-			escritor.Write(contactoTienda);
-		}
-		
 		public void lectura(BinaryReader lector){
 			ger.lectura(lector);
 			nroEmp = lector.ReadInt32();
-			for(int i= 1 ;i <= nroEmp ;i++){
-				emp[i].lectura(lector);
+			for(int i = 1; i <= nroEmp ;i++){
+				emp[i] = new Empleado(); //          ESTO ES LO MAS IMPORTANTE, NUNCA OLVIDARSE DE ESTO, CUANDO HAY VECTORES (O CUANDO UNA CLASE ESTA RELACIONADA POR AGREGACION, EN GENERAL)
+				emp[i].lectura(lector); 
 			}
 			direccionTienda = lector.ReadString();
 			contactoTienda = lector.ReadInt32();
+		}
+		
+		public void escritura(BinaryWriter escritor){
+			ger.escritura(escritor);
+			escritor.Write(nroEmp);
+			for(int i = 1; i <= nroEmp ;i++){
+				emp[i].escritura(escritor); 
+			}
+			escritor.Write(direccionTienda);
+			escritor.Write(contactoTienda);
 		}
 	}
 }

@@ -18,58 +18,41 @@ namespace Tienda
 	public partial class VentanaAgregar : Form
 	{
 		
-		Tienda tienda;
 		ArchivoTienda arch;
-		string ruta;
 		
 		public VentanaAgregar()
 		{
 			InitializeComponent();
 		}
 		
-//		public VentanaAgregar(Tienda t)
-//		{
-//			tienda = t;
-//			InitializeComponent();
-//		}
-		
-		public VentanaAgregar(string t)
+		public VentanaAgregar(ArchivoTienda t)
 		{
 			InitializeComponent();
-			ruta = t;
-			arch = new ArchivoTienda(ruta);
-			tienda = arch.getTienda();
+			arch = t;
 		}
 		
-		
+		void Label2Click(object sender, EventArgs e)
+		{
+			
+		}
 		
 		
 		
 		void ButtonAgregarClick(object sender, EventArgs e)
 		{
-			tienda = arch.getTienda();			
-			mesageboxerrores();
-			
-			MessageBox.Show(arch.getTienda().ToString(),"ANTES");
-			
 			int mal = esvalido();
+			
+			mostrarmessagebox();
+			
 			if(mal == 0){ //es todo ok
-				Empleado emp = textBoxAEmpleado();
-				
+				Empleado emp = deTextboxAEmpleado();
+				arch.adicionaEmpleado(emp);
 				limpiarTextBox();
-				
-				tienda.adiEmpleado(emp);
-				
-				arch.modificar(tienda);
-			MessageBox.Show(arch.getTienda().ToString(),"DESPUES");
-				
 			}
 		}
 		
-		
-		public void mesageboxerrores(){
+		void mostrarmessagebox(){
 			int mal = esvalido();
-			
 			if(mal == 1){
 				MessageBox.Show("El nombre, no cumple con el formato","Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
@@ -90,25 +73,24 @@ namespace Tienda
 			}
 		}
 		
-		public Empleado textBoxAEmpleado(){
+		public Empleado deTextboxAEmpleado(){
 			Empleado emp = new Empleado();
+			
 			emp.Nombre = textBoxNombre.Text;
 			emp.Paterno = textBoxPaterno.Text;
 			emp.Materno = textBoxMaterno.Text;
 			emp.Sueldo = double.Parse(textBoxSueldo.Text);
 			emp.Ci = int.Parse(textBoxCarnet.Text);
 			emp.Nrocelular = int.Parse(textBoxCelular.Text);
-			
-		
 			string fn = monthCalendarFechaNacimiento.SelectionRange.Start.Day+"/"+monthCalendarFechaNacimiento.SelectionRange.Start.Month+"/"+monthCalendarFechaNacimiento.SelectionRange.Start.Year;
 			string fc = monthCalendarFechaContrato.SelectionRange.Start.Day+"/"+monthCalendarFechaContrato.SelectionRange.Start.Month+"/"+monthCalendarFechaContrato.SelectionRange.Start.Year;
-			
 			emp.Fechanac = fn;
 			emp.FechaContrato = fc;
+			
 			return emp;
 		}
 		
-		public bool espalabra(string s){
+		bool espalabra(string s){
 			bool sw = true;
 			if(s.Length == 0){
 				sw = false;
@@ -121,7 +103,7 @@ namespace Tienda
 			return sw;
 		}
 		
-		public bool esnumero(string s){
+		bool esnumero(string s){
 			bool sw = true;
 			if(s.Length == 0){
 				sw = false;
@@ -134,7 +116,7 @@ namespace Tienda
 			return sw;
 		}
 		
-		public int esvalido(){
+		int esvalido(){
 			string a = textBoxNombre.Text;
 			string b = textBoxPaterno.Text;
 			string c = textBoxMaterno.Text;
@@ -164,7 +146,7 @@ namespace Tienda
 			return 0; // me indica que todo esta bien
 		}
 		
-		public void limpiarTextBox(){
+		void limpiarTextBox(){
 			textBoxNombre.Text = "";
 			textBoxPaterno.Text = "";
 			textBoxMaterno.Text = "";
@@ -172,13 +154,6 @@ namespace Tienda
 			(textBoxCarnet.Text) = "";
 			(textBoxCelular.Text) = "";
 			
-			
-		}
-		
-		
-		
-		void Label2Click(object sender, EventArgs e)
-		{
 			
 		}
 	}
